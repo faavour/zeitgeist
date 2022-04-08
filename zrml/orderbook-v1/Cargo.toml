@@ -1,18 +1,18 @@
 
 [dependencies]
-frame-benchmarking = { branch = "moonbeam-polkadot-v0.9.16", default-features = false, optional = true, git = "https://github.com/purestake/substrate" }
-frame-support = { branch = "moonbeam-polkadot-v0.9.16", default-features = false, git = "https://github.com/purestake/substrate" }
-frame-system = { branch = "moonbeam-polkadot-v0.9.16", default-features = false, git = "https://github.com/purestake/substrate" }
-orml-traits = { branch = "moonbeam-polkadot-v0.9.16", default-features = false, git = "https://github.com/PureStake/open-runtime-module-library" }
+frame-benchmarking = { branch = "polkadot-v0.9.17", default-features = false, optional = true, git = "https://github.com/paritytech/substrate.git" }
+frame-support = { branch = "polkadot-v0.9.17", default-features = false, git = "https://github.com/paritytech/substrate.git" }
+frame-system = { branch = "polkadot-v0.9.17", default-features = false, git = "https://github.com/paritytech/substrate.git" }
+orml-traits = { rev = "c439a50e01944aedeef33231e0824a17ed1813bc", default-features = false, git = "https://github.com/open-web3-stack/open-runtime-module-library.git" }
 parity-scale-codec = { default-features = false, features = ["derive", "max-encoded-len"], version = "2.0.0" }
-sp-runtime = { branch = "moonbeam-polkadot-v0.9.16", default-features = false, git = "https://github.com/purestake/substrate" }
+sp-runtime = { branch = "polkadot-v0.9.17", default-features = false, git = "https://github.com/paritytech/substrate.git" }
 zeitgeist-primitives = { default-features = false, path = "../../primitives" }
 scale-info = { version = "1.0", default-features = false, features = ["derive"] }
 
 # Mock
-orml-tokens = { branch = "moonbeam-polkadot-v0.9.16", git = "https://github.com/PureStake/open-runtime-module-library", optional = true }
-pallet-balances = { branch = "moonbeam-polkadot-v0.9.16", git = "https://github.com/purestake/substrate", optional = true }
-sp-io = { branch = "moonbeam-polkadot-v0.9.16", git = "https://github.com/purestake/substrate", optional = true }
+orml-tokens = { rev = "c439a50e01944aedeef33231e0824a17ed1813bc", git = "https://github.com/open-web3-stack/open-runtime-module-library.git", optional = true }
+pallet-balances = { branch = "polkadot-v0.9.17", git = "https://github.com/paritytech/substrate.git", optional = true }
+sp-io = { branch = "polkadot-v0.9.17", git = "https://github.com/paritytech/substrate.git", optional = true }
 
 [dev-dependencies]
 zrml-orderbook-v1 = { features = ["mock"], path = "." }
